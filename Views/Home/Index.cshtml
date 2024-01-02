@@ -1,0 +1,15 @@
+﻿@model HomeIndexDTO
+
+@{
+    ViewData["Title"] = "Home Page";
+
+
+    DateTime hoy = DateTime.Now;
+    var nombres = new List<string>() { "Felipe", "Claudia", "Eduardo" };
+}
+
+<partial name="_Presentacion"/>
+
+<partial name="_Habilidades"/>
+
+<partial name="_SeccionProyectos" model="Model.Proyectos" />
